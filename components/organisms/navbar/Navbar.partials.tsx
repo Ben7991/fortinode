@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
-import { PiHamburger } from "react-icons/pi";
+import { useState } from 'react';
+import Link from 'next/link';
+import { PiHamburger } from 'react-icons/pi';
 
 export default function Nav() {
   const [showNav, setShowNav] = useState(false);
@@ -22,13 +22,13 @@ export default function Nav() {
       </button>
       <div
         className={`absolute top-18 right-0 w-[200px] bg-gray-100 transition-[height] ${
-          showNav ? "h-[200px]" : "h-0 overflow-hidden"
+          showNav ? 'h-[200px]' : 'h-0 overflow-hidden'
         } lg:static lg:bg-transparent lg:h-auto lg:w-auto`}
       >
         <ul className="lg:flex">
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-200)] hover:text-white"
+              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
               href="/"
             >
               Home
@@ -36,7 +36,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-200)] hover:text-white"
+              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
               href="/about-us"
             >
               About Us
@@ -44,7 +44,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-200)] hover:text-white"
+              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
               href="/services"
             >
               Services
@@ -52,7 +52,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-200)] hover:text-white"
+              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
               href="/blog"
             >
               Blog
@@ -60,7 +60,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-200)] hover:text-white"
+              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
               href="/contact-us"
             >
               Contact Us
