@@ -1,9 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --blue-100: #1f83c1;
   --dark-blue-100: #153b7a;
-  --dark-blue-200: #1d3978;
+  --dark-blue-200: #182e54;
 
   --gray-300: #646361;
   --gray-500: #51514f;
