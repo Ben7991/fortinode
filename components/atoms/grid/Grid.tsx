@@ -7,7 +7,7 @@ export function Container(props: ComponentPropsWithoutRef<'div'>) {
     <div
       className={`${
         className ?? ''
-      } w-[90%] md:w-[85%] xl:w-[80%] 2xl:w-[1135px] m-auto`}
+      } w-[95%] md:w-[90%] xl:w-[80%] 2xl:w-[1135px] m-auto`}
       {...remainingProps}
     >
       {props.children}
