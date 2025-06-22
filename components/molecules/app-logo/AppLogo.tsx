@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function AppLogo() {
   return (
@@ -10,7 +10,7 @@ export default function AppLogo() {
         height={48}
       />
       <p className="flex flex-col">
-        <strong className="text-2xl text-[var(--dark-blue-200)]">
+        <strong className="text-2xl text-[var(--dark-blue-100)]">
           Fortinode
         </strong>
         <span>Technologies</span>
