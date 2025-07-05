@@ -1,7 +1,7 @@
-import { ComponentPropsWithoutRef } from 'react';
+import { ComponentPropsWithoutRef } from 'react'
 
 export function Container(props: ComponentPropsWithoutRef<'div'>) {
-  const { className, ...remainingProps } = props;
+  const { className, ...remainingProps } = props
 
   return (
     <div
@@ -12,15 +12,35 @@ export function Container(props: ComponentPropsWithoutRef<'div'>) {
     >
       {props.children}
     </div>
-  );
+  )
 }
 
 export function Row(props: ComponentPropsWithoutRef<'div'>) {
-  const { className, ...remainingProps } = props;
+  const { className, ...remainingProps } = props
 
   return (
     <div className={`${className ?? ''} flex`} {...remainingProps}>
       {props.children}
     </div>
-  );
+  )
+}
+
+type ColProps = {
+  colSize: 'col-4' | 'col-12'
+} & ComponentPropsWithoutRef<'div'>
+
+export function Col({ colSize, ...props }: ColProps) {
+  const { className, ...remainingProps } = props
+
+  let colSizeClass = ''
+
+  if (colSize === 'col-4') {
+    colSizeClass = 'basis-full md:basis-1/2 xl:basis-1/3'
+  }
+
+  return (
+    <div className={`${className ?? ''} ${colSizeClass}`} {...remainingProps}>
+      {props.children}
+    </div>
+  )
 }
