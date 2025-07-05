@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 :root {
+  --light-blue-100: #a9d3ee;
   --blue-100: #1f83c1;
   --dark-blue-100: #153b7a;
   --dark-blue-200: #182e54;
@@ -14,6 +15,8 @@ body {
   font-weight: 400;
   font-style: normal;
   color: var(--gray-300);
+  background-color: #f1f8fd;
+  line-height: 1.7;
 }
 
 h1,
@@ -39,8 +42,23 @@ h4 {
   font-size: 1.25em;
 }
 h5 {
-  font-size: 0.75em;
+  font-size: 1em;
 }
-h5 {
-  font-size: 0.25em;
+h6 {
+  font-size: 0.75rem;
+}
+
+.testimonial .swiper {
+  padding: 0 50px !important;
+}
+
+.testimonial .slider-item {
+  background: linear-gradient(
+    to bottom right,
+    #e4f5ff 20%,
+    #ddf0fd 20% 40%,
+    #dbf0fd 40% 60%,
+    #d5efff 60% 80%,
+    #cbeafd 80% 100%
+  );
 }
