@@ -1,23 +1,24 @@
-import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import type { Metadata } from 'next'
+import { Open_Sans } from 'next/font/google'
 
-import "./globals.css";
-import Navbar from "@/components/organisms/navbar/Navbar";
+import './globals.css'
+import 'swiper/css'
+import Navbar from '@/components/organisms/navbar/Navbar'
 
 const openSans = Open_Sans({
-  variable: "--font-open-sans",
-  subsets: ["latin"],
-});
+  variable: '--font-open-sans',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
-  title: "Fortinode Technologies",
-  description: "Reliable IT & Network Support for Growing Businesses",
-};
+  title: 'Fortinode Technologies',
+  description: 'Reliable IT & Network Support for Growing Businesses',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -26,5 +27,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }
