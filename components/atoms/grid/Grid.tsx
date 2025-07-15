@@ -26,7 +26,7 @@ export function Row(props: ComponentPropsWithoutRef<'div'>) {
 }
 
 type ColProps = {
-  colSize: 'col-4' | 'col-12'
+  colSize: 'col-4' | 'col-12' | 'col-6'
 } & ComponentPropsWithoutRef<'div'>
 
 export function Col({ colSize, ...props }: ColProps) {
@@ -36,6 +36,8 @@ export function Col({ colSize, ...props }: ColProps) {
 
   if (colSize === 'col-4') {
     colSizeClass = 'basis-full md:basis-1/2 xl:basis-1/3'
+  } else if (colSize === 'col-6') {
+    colSizeClass = 'basis-full md:basis-1/2 xl:basis-1/2'
   }
 
   return (
