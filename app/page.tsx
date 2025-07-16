@@ -9,6 +9,7 @@ import Headline from '@/components/atoms/headline/Headline'
 import Button from '@/components/atoms/button/Button'
 import Testimonial from '@/components/organisms/testimonial/Testimonial'
 import Footer from '@/components/organisms/footer/Footer'
+import AcademyAd from '@/components/molecules/academy-ad/AcademyAd'
 
 export default function Home() {
   return (
@@ -131,6 +132,7 @@ export default function Home() {
           </div>
         </Container>
       </article>
+      <AcademyAd />
       <Testimonial />
       <Footer />
     </>
