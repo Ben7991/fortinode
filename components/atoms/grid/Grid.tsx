@@ -38,6 +38,8 @@ export function Col({ colSize, ...props }: ColProps) {
     colSizeClass = 'basis-full md:basis-1/2 xl:basis-1/3'
   } else if (colSize === 'col-6') {
     colSizeClass = 'basis-full md:basis-1/2 xl:basis-1/2'
+  } else if (colSize === 'col-12') {
+    colSizeClass = 'basis-full'
   }
 
   return (
