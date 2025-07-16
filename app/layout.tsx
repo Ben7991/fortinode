@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
-import { Open_Sans } from 'next/font/google'
+import { Archivo } from 'next/font/google'
 
 import './globals.css'
 import 'swiper/css'
 import Navbar from '@/components/organisms/navbar/Navbar'
 
-const openSans = Open_Sans({
-  variable: '--font-open-sans',
+const openSans = Archivo({
+  variable: '--font-archivo',
   subsets: ['latin'],
 })
 
