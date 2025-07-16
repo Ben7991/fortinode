@@ -62,3 +62,16 @@ h6 {
     #cbeafd 80% 100%
   );
 }
+
+.academy-ad {
+  background: linear-gradient(
+    to bottom right,
+    var(--blue-100),
+    var(--dark-blue-100)
+  );
+}
+
+.academy-ad__text {
+  font-weight: 500;
+  color: var(--color-white);
+}
