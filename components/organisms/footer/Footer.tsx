@@ -102,8 +102,10 @@ export default function Footer() {
         </Row>
       </Container>
       <Container className="mt-10 border-t border-t-white pt-10">
-        <Row className="flex-col gap-4 md:flex-row md:justify-between md:items-center">
-          <p>Copyright &copy; 2025 Cybersive Solutions | All rights reserved</p>
+        <Row className="flex-col items-center gap-4 md:flex-row md:justify-between md:items-center">
+          <p className="text-center md:text-start">
+            Copyright &copy; 2025 Cybersive Solutions | All rights reserved
+          </p>
           <Col colSize="col-4" className="flex justify-end">
             <Link href="/" className="underline inline-block" target="_blank">
               Powered By Bernard Teye <GrShare className="inline-block" />
