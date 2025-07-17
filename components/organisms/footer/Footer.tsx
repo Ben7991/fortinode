@@ -69,7 +69,7 @@ export default function Footer() {
                 <div className="flex bg-white ps-3 rounded-sm overflow-hidden">
                   <input
                     type="text"
-                    className="basis-[90%] text-[var(--dark-blue-200)] outline-none text-[0.875em]"
+                    className="basis-[90%] text-[var(--dark-blue-200)] outline-none text-[0.875em] py-2"
                     placeholder="Email addresss..."
                   />
                   <button
@@ -87,7 +87,7 @@ export default function Footer() {
               </Headline>
               <Link
                 href="tel:+233531937928"
-                className="mb-3 text-[0.875em] flex items-center gap-2 hover:underline"
+                className="mb-1 text-[0.875em] flex items-center gap-2 hover:underline"
               >
                 <FiPhone className="text-xl" /> +233 53 193 7928
               </Link>
