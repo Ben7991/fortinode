@@ -20,6 +20,9 @@
 # production
 /build
 
+# ide folder
+/.idea
+
 # misc
 .DS_Store
 *.pem
