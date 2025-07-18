@@ -92,7 +92,7 @@ export default function Footer() {
                 <FiPhone className="text-xl" /> +233 53 193 7928
               </Link>
               <Link
-                href="tel:+233531937928"
+                href="mailto: cybersive.solutions@gmail.com"
                 className="text-[0.875em] flex items-center gap-2 hover:underline"
               >
                 <FiMail className="text-xl" /> cybersive.solutions@gmail.com
