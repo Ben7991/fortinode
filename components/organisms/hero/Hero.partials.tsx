@@ -25,8 +25,8 @@ export function HeroMessage() {
           Explore Our Services
         </Button>
         <Button
-          el="button"
-          type="button"
+          el="link"
+          href="/contact-us"
           variant="primary"
           className="px-5 cursor-pointer"
         >
