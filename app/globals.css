@@ -75,3 +75,11 @@ h6 {
   font-weight: 500;
   color: var(--color-white);
 }
+
+.heading-semibold {
+  font-weight: 500;
+}
+
+div:has(.form-control:focus) {
+  border-color: var(--blue-100);
+}
