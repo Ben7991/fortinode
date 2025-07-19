@@ -11,7 +11,9 @@ export default function ContactUs() {
     <>
       <article className="py-15 md:py-10 xl:py-15">
         <Container>
-          <Headline tag="h1" className="mb-5">Let's Get In Touch</Headline>
+          <Headline tag="h1" className="mb-5">
+            Let's Get In Touch
+          </Headline>
           <Row className="mb-5">
             <Col colSize="col-4">
               <div className="flex flex-col items-start gap-y-3">
@@ -28,7 +30,10 @@ export default function ContactUs() {
                 <div className="inline-block py-2 px-3 border border-gray-300 bg-white rounded-md">
                   <FiMail className="text-xl" />
                 </div>
-                <Link href="mailto:cybersive.solutions@gmail.com" className="hover:underline">
+                <Link
+                  href="mailto:cybersive.solutions@gmail.com"
+                  className="hover:underline"
+                >
                   cybersive.solutions@gmail.com
                 </Link>
               </div>

@@ -126,7 +126,12 @@ export default function Home() {
             </Col>
           </Row>
           <div className="text-center">
-            <Button el="link" variant="light" href="/services" className="px-5">
+            <Button
+              el="link"
+              variant="light"
+              href="/services"
+              className="px-5 inline-block"
+            >
               Read More
             </Button>
           </div>
