@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { BsSend } from 'react-icons/bs'
 import { GrShare } from 'react-icons/gr'
 import { FiMail, FiPhone } from 'react-icons/fi'
 
@@ -57,37 +56,13 @@ export default function Footer() {
             </div>
           </Col>
           <Col colSize="col-4">
-            <div className="mb-5">
-              <Headline tag="h5" className="text-[#fff!important] mb-2">
-                Subscribe to Our Newsletter
-              </Headline>
-              <p className="mb-3 text-[0.875em]">
-                Join our newsletter for the latest in tech trends, cybersecurity
-                updates, and productivity hacks — all delivered monthly.
-              </p>
-              <form>
-                <div className="flex bg-white ps-3 rounded-sm overflow-hidden">
-                  <input
-                    type="text"
-                    className="basis-[90%] text-[var(--dark-blue-200)] outline-none text-[0.875em] py-2"
-                    placeholder="Email addresss..."
-                  />
-                  <button
-                    type="submit"
-                    className="bg-[var(--blue-100)] inline-block px-3 py-2 cursor-pointer hover:bg-[var(--dark-blue-100)]"
-                  >
-                    <BsSend className="text-xl text-white" />
-                  </button>
-                </div>
-              </form>
-            </div>
             <div>
               <Headline tag="h5" className="text-[#fff!important] mb-2">
                 Our Contact Info
               </Headline>
               <Link
                 href="tel:+233531937928"
-                className="mb-1 text-[0.875em] flex items-center gap-2 hover:underline"
+                className="mb-2 text-[0.875em] flex items-center gap-2 hover:underline"
               >
                 <FiPhone className="text-xl" /> +233 53 193 7928
               </Link>
@@ -107,7 +82,7 @@ export default function Footer() {
             Copyright &copy; 2025 Cybersive Solutions | All rights reserved
           </p>
           <Col colSize="col-4" className="flex justify-end">
-            <Link href="/" className="underline inline-block" target="_blank">
+            <Link href="/" className="inline-block hover:text-white" target="_blank">
               Powered By Bernard Teye <GrShare className="inline-block" />
             </Link>
           </Col>
