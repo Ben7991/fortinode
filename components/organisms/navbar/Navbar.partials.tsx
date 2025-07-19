@@ -1,15 +1,15 @@
-'use client';
+'use client'
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { PiHamburger } from 'react-icons/pi';
+import { useState } from 'react'
+import Link from 'next/link'
+import { PiHamburger } from 'react-icons/pi'
 
 export default function Nav() {
-  const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false)
 
   const toggleNav = () => {
-    setShowNav((prevState) => !prevState);
-  };
+    setShowNav((prevState) => !prevState)
+  }
 
   return (
     <>
@@ -21,8 +21,8 @@ export default function Nav() {
         <PiHamburger className="text-2xl" />
       </button>
       <div
-        className={`absolute top-18 right-0 w-[200px] bg-gray-100 transition-[height] ${
-          showNav ? 'h-[200px]' : 'h-0 overflow-hidden'
+        className={`absolute top-18 right-0 w-[200px] z-[1] bg-white transition-[height] ${
+          showNav ? 'h-[174px] shadow-2xl' : 'h-0 overflow-hidden'
         } lg:static lg:bg-transparent lg:h-auto lg:w-auto`}
       >
         <ul className="lg:flex">
@@ -53,14 +53,6 @@ export default function Nav() {
           <li>
             <Link
               className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
-              href="/blog"
-            >
-              Blog
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
               href="/contact-us"
             >
               Contact Us
@@ -68,6 +60,12 @@ export default function Nav() {
           </li>
         </ul>
       </div>
+      <Link
+        className="hidden lg:block py-2 px-4 bg-[var(--dark-blue-100)] hover:bg-[var(--dark-blue-200)] text-white lg:rounded-md lg:cursor-pointer"
+        href="#"
+      >
+        Our Academy
+      </Link>
     </>
-  );
+  )
 }
