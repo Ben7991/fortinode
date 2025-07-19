@@ -1,6 +1,6 @@
-import AppLogo from "@/components/molecules/app-logo/AppLogo";
-import Nav from "./Navbar.partials";
-import { Container, Row } from "@/components/atoms/grid/Grid";
+import AppLogo from '@/components/molecules/app-logo/AppLogo'
+import Nav from './Navbar.partials'
+import { Container, Row } from '@/components/atoms/grid/Grid'
 
 export default function Navbar() {
   return (
@@ -12,5 +12,5 @@ export default function Navbar() {
         </Row>
       </Container>
     </nav>
-  );
+  )
 }
