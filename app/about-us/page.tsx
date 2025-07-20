@@ -48,7 +48,7 @@ export default function AboutUs() {
             <Col colSize="col-6">
               <div className="relative">
                 <Image
-                  src="/img/fortinode-3.jpg"
+                  src="/img/fortinode-4.jpg"
                   alt="Men in suit image"
                   className="w-[300px] md:w-[400px] lg:w-[430px] xl:w-[450px] 2xl:w-[500px] inline-block rounded-md"
                   width={300}
@@ -80,7 +80,7 @@ export default function AboutUs() {
             <Col colSize="col-6">
               <div className="relative">
                 <Image
-                  src="/img/fortinode-4.jpg"
+                  src="/img/fortinode-3.jpg"
                   alt="Men in suit image"
                   className="w-[300px] md:w-[400px] lg:w-[430px] xl:w-[450px] 2xl:w-[500px] inline-block rounded-md"
                   width={300}
