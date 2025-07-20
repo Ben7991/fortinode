@@ -2,6 +2,12 @@
 
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import {
+  PiEnvelope,
+  PiNotePencil,
+  PiPaperPlaneRight,
+  PiUser,
+} from 'react-icons/pi'
 
 import { Col, Container, Row } from '@/components/atoms/grid/Grid'
 import {
@@ -10,12 +16,6 @@ import {
   FormGroup,
   FormLabel,
 } from '@/components/atoms/form/Form'
-import {
-  PiEnvelope,
-  PiNotePencil,
-  PiPaperPlaneRight,
-  PiUser,
-} from 'react-icons/pi'
 import Button from '@/components/atoms/button/Button'
 import {
   ContactFormInputs,
