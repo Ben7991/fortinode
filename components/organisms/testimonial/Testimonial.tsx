@@ -1,5 +1,3 @@
-'use client'
-
 import { Container } from '@/components/atoms/grid/Grid'
 import { TestimonialSlider } from './Testimonial.partials'
 import SectionHeading from '@/components/molecules/section-heading/SectionHeading'

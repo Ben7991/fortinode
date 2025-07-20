@@ -1,8 +1,12 @@
+'use client'
+
 import { ComponentPropsWithoutRef } from 'react'
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react'
 import { PiCaretLeft, PiCaretRight } from 'react-icons/pi'
 
 import Headline from '@/components/atoms/headline/Headline'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { testimonials } from '@/data/testimonials'
 
 type TestimonialItemProps = {
   message: string
@@ -38,39 +42,28 @@ export function TestimonialSlider() {
           spaceBetween: 30,
         },
         1200: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
       }}
+      pagination={{
+        clickable: true,
+      }}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay, Pagination, Navigation]}
     >
-      <SwiperSlide>
-        <TestimonialItem
-          name="James Smith"
-          companyName="Horizon Capital Group"
-          message="Partnering with FortiNode was one of the best decisions we made for our security posture. They quickly identified vulnerabilities we didn't even know existed and implemented scalable, effective solutions. Their team is responsive, highly skilled, and truly understands the nuances of the financial sector."
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <TestimonialItem
-          name="Clara Altman"
-          companyName="MedBridge Clinics"
-          message="In the healthcare industry, data security is non-negotiable. FortiNode gave us the peace of mind we needed by ensuring our systems were HIPAA-compliant and resilient to cyber threats. Their 24/7 monitoring and incident response team have been invaluable."
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <TestimonialItem
-          name="Finlay Kirk"
-          companyName="Atlas Defense Solutions"
-          message="We experienced a serious phishing attempt last year, and FortiNode helped us contain it within hours. Since then, they've completely overhauled our security infrastructure and trained our staff on best practices. We haven't had a single incident since."
-        />
-      </SwiperSlide>
-      <SwiperSlide>
-        <TestimonialItem
-          name="Dannette P. Cervantes"
-          companyName="BrightCart Online"
-          message="Our contracts require strict adherence to federal cybersecurity standards, and FortiNode has been instrumental in helping us stay compliant with NIST and CMMC frameworks. They're not just a vendor — they're a strategic partner"
-        />
-      </SwiperSlide>
+      {testimonials.map((testimonial) => (
+        <SwiperSlide key={testimonial.name}>
+          <TestimonialItem
+            name={testimonial.name}
+            companyName={testimonial.companyName}
+            message={testimonial.message}
+          />
+        </SwiperSlide>
+      ))}
       <Button position="left" className="left-0 top-1/2 -translate-y-1/2" />
       <Button position="right" className="right-0 top-1/2 -translate-y-1/2" />
     </Swiper>
