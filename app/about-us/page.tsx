@@ -1,6 +1,7 @@
 import { Col, Container, Row } from '@/components/atoms/grid/Grid'
 import Headline from '@/components/atoms/headline/Headline'
 import AcademyAd from '@/components/molecules/academy-ad/AcademyAd'
+import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
 import Footer from '@/components/organisms/footer/Footer'
 import { coreValues } from '@/data/core-values'
 import { teamMembers } from '@/data/team-members'
@@ -58,9 +59,7 @@ export default function AboutUs() {
             </Col>
             <Col colSize="col-6">
               <div>
-                <Headline tag="h3" className="mb-3">
-                  Our Mission
-                </Headline>
+                <SectionHeading text="Our Mission" />
                 <p>
                   Our mission is to empower Ghanaian businesses, particularly
                   SMEs, with accessible, robust, and proactive cybersecurity and
@@ -90,9 +89,7 @@ export default function AboutUs() {
             </Col>
             <Col colSize="col-6">
               <div>
-                <Headline tag="h3" className="mb-3">
-                  Our Vision
-                </Headline>
+                <SectionHeading text="Our Vision" />
                 <p>
                   To be the leading and most trusted cybersecurity and IT
                   services provider in Ghana and Africa, recognized for our
@@ -109,9 +106,7 @@ export default function AboutUs() {
       <article className="py-5 md:py-10 xl:py-15">
         <Container>
           <div className="text-center mb-5">
-            <Headline tag="h3" className="mb-3">
-              Our Core Values
-            </Headline>
+            <SectionHeading text="Our Core Values" />
             <p className="md:w-2/4 mx-auto">
               Our values are the foundation of everything we do. They guide our
               interactions, our decisions, and our commitment to you:
@@ -137,9 +132,7 @@ export default function AboutUs() {
       <article className="py-5 md:py-10 xl:py-15">
         <Container>
           <div className="text-center mb-5">
-            <Headline tag="h3" className="mb-3">
-              Meet Our Team
-            </Headline>
+            <SectionHeading text="Meet Our Team" />
             <p className="md:w-2/3 mx-auto">
               Our strength lies in our people. The FortiNode team is comprised
               of dedicated and certified cybersecurity and IT professionals who

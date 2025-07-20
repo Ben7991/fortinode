@@ -10,6 +10,7 @@ import Button from '@/components/atoms/button/Button'
 import Testimonial from '@/components/organisms/testimonial/Testimonial'
 import Footer from '@/components/organisms/footer/Footer'
 import AcademyAd from '@/components/molecules/academy-ad/AcademyAd'
+import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
 
 export default function Home() {
   return (
@@ -29,11 +30,8 @@ export default function Home() {
                 height={300}
               />
             </div>
-            <div className="md:p-3 basis-1/2 md:order-1 lg:order-2 lg:ps-8 xl:ps-10 2xl:ps-15 relative">
-              <div className="absolute w-12 h-12 rounded-full bg-[var(--light-blue-100)] -z-[1] -top-2 -left-3 md:top-0 md:left-0 lg:top-1 lg:left-4 xl:left-6 2xl:top-1 2xl:left-11" />
-              <Headline tag="h3" className="mb-3">
-                Why Choose Us?
-              </Headline>
+            <div className="md:p-3 basis-1/2 md:order-1 lg:order-2 lg:ps-8 xl:ps-10 2xl:ps-15">
+              <SectionHeading text="Why Choose Us?" />
               <p className="mb-2">
                 The digital realm is constantly evolving, bringing with it both
                 incredible opportunities and persistent threats. Choosing a
@@ -66,9 +64,7 @@ export default function Home() {
       <article className="py-5 md:py-10 xl:py-15" id="services">
         <Container>
           <div className="text-center mb-5">
-            <Headline tag="h3" className="mb-3">
-              Our Core Offerings
-            </Headline>
+            <SectionHeading text="Our Core Offerings" />
             <p className="md:w-2/3 mx-auto">
               At FortiNode, we're your dedicated shield in the digital world. We
               specialize in proactive, robust cybersecurity solutions and
