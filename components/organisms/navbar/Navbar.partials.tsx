@@ -28,7 +28,7 @@ export default function Nav() {
         <ul className="lg:flex">
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
+              className="block py-2 px-4 hover:text-[var(--dark-blue-100)] hover:bg-white lg:rounded-md"
               href="/"
             >
               Home
@@ -36,7 +36,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
+              className="block py-2 px-4 hover:text-[var(--dark-blue-100)] hover:bg-white lg:rounded-md"
               href="/about-us"
             >
               About Us
@@ -44,7 +44,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
+              className="block py-2 px-4 hover:text-[var(--dark-blue-100)] hover:bg-white lg:rounded-md"
               href="/services"
             >
               Services
@@ -52,7 +52,7 @@ export default function Nav() {
           </li>
           <li>
             <Link
-              className="block py-2 px-4 hover:bg-[var(--dark-blue-100)] hover:text-white lg:rounded-md"
+              className="block py-2 px-4 hover:text-[var(--dark-blue-100)] hover:bg-white lg:rounded-md"
               href="/contact-us"
             >
               Contact Us
