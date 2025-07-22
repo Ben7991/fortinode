@@ -1,9 +1,9 @@
-import { Container, Row } from '@/components/atoms/grid/Grid';
-import { HeroImage, HeroMessage } from './Hero.partials';
+import { Container, Row } from '@/components/atoms/grid/Grid'
+import { HeroImage, HeroMessage } from './Hero.partials'
 
 export default function Hero() {
   return (
-    <section className="py-5 md:py-10 xl:py-15">
+    <section>
       <Container>
         <Row className="flex-col lg:flex-row lg:items-center">
           <HeroMessage />
@@ -11,5 +11,5 @@ export default function Hero() {
         </Row>
       </Container>
     </section>
-  );
+  )
 }
