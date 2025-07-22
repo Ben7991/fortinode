@@ -5,12 +5,13 @@ import { MdOutlineRefresh } from 'react-icons/md'
 
 import { Col, Container, Row } from '@/components/atoms/grid/Grid'
 import Hero from '@/components/organisms/hero/Hero'
-import Headline from '@/components/atoms/headline/Headline'
 import Button from '@/components/atoms/button/Button'
 import Testimonial from '@/components/organisms/testimonial/Testimonial'
 import Footer from '@/components/organisms/footer/Footer'
 import AcademyAd from '@/components/molecules/academy-ad/AcademyAd'
 import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
+import { FiSettings } from 'react-icons/fi'
+import ServiceCard from '@/components/molecules/service-card/ServiceCard'
 
 export default function Home() {
   return (
@@ -73,64 +74,59 @@ export default function Home() {
               early, and ensure your operations remain secure and uninterrupted.
             </p>
           </div>
-          <Row className="flex-wrap justify-center mb-10">
-            <Col colSize="col-4" className="text-center p-4">
-              <HiOutlineShieldCheck className="text-[#ff7058] text-5xl mx-auto" />
-              <Headline tag="h4" className="my-3">
-                Proactive Prevention & Hardening Services
-              </Headline>
-              <p>
-                Don't wait for an attack to happen. We help you build a strong
+          <Row className="flex-wrap justify-center gap-y-4 lg:gap-y-10">
+            <Col colSize="col-4">
+              <ServiceCard
+                icon={
+                  <HiOutlineShieldCheck className="text-[var(--blue-100)] text-5xl mx-auto" />
+                }
+                title="Proactive Prevention & Hardening"
+                description="Don't wait for an attack to happen. We help you build a strong
                 foundation, making your systems less attractive and more
-                resistant to cyber threats
-              </p>
+                resistant to cyber threats"
+              />
             </Col>
-            <Col colSize="col-4" className="text-center p-4">
-              <HiOutlineEye className="text-[#ff7058] text-5xl mx-auto" />
-              <Headline tag="h4" className="my-3">
-                Detection & Monitoring Services
-              </Headline>
-              <p>
-                Even the best defenses can be tested. Our constant vigilance
-                ensures that any suspicious activity is quickly identified and
-                addressed, often before it escalates into a major incident. We
-                achieve this through advanced technology and expert analysis,
-                giving you peace of mind
-              </p>
+            <Col colSize="col-4">
+              <ServiceCard
+                icon={
+                  <HiOutlineEye className="text-[var(--blue-100)] text-5xl mx-auto" />
+                }
+                title="Detection & Monitoring"
+                description="Continuous detection and real-time monitoring to identify and respond to threats before they impact your business."
+              />
             </Col>
-            <Col colSize="col-4" className="text-center p-4">
-              <MdOutlineRefresh className="text-[#ff7058] text-5xl mx-auto" />
-              <Headline tag="h4" className="my-3">
-                Response & Recovery Services
-              </Headline>
-              <p>
-                When an incident occurs, every second counts. Our swift and
-                decisive actions minimize damage, contain breaches, and get you
-                back to business as quickly as possible
-              </p>
+            <Col colSize="col-4">
+              <ServiceCard
+                icon={
+                  <MdOutlineRefresh className="text-[var(--blue-100)] text-5xl mx-auto" />
+                }
+                title="Response & Recovery"
+                description="Swift incident response and effective recovery strategies to minimize downtime and protect your critical assets."
+              />
             </Col>
-            <Col colSize="col-4" className="text-center p-4">
-              <HiOutlineLightBulb className="text-[#ff7058] text-5xl mx-auto" />
-              <Headline tag="h4" className="my-3">
-                Cybersecurity Training & Awareness
-              </Headline>
-              <p>
-                Your employees are your first line of defense. We empower your
+            <Col colSize="col-4">
+              <ServiceCard
+                icon={
+                  <HiOutlineLightBulb className="text-[var(--blue-100)] text-5xl mx-auto" />
+                }
+                title="Cybersecurity Training & Awareness"
+                description="Your employees are your first line of defense. We empower your
                 team with the knowledge and skills to recognize and resist cyber
-                threats
-              </p>
+                threats"
+              />
+            </Col>
+            <Col colSize="col-4">
+              <ServiceCard
+                icon={
+                  <FiSettings className="text-[var(--blue-100)] text-5xl mx-auto" />
+                }
+                title="Managed IT Services"
+                description="We provide continuous monitoring, proactive
+                maintenance, and expert support to keep your systems secure and
+                running smoothly."
+              />
             </Col>
           </Row>
-          <div className="text-center">
-            <Button
-              el="link"
-              variant="light"
-              href="/services"
-              className="px-5 inline-block"
-            >
-              Read More
-            </Button>
-          </div>
         </Container>
       </article>
       <AcademyAd />
