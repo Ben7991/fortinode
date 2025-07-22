@@ -45,39 +45,53 @@ export function HeroMessage() {
   )
 }
 
+// export function HeroImage() {
+//   return (
+//     <div className="basis-1/2 relative text-center py-10">
+//       <div className="absolute w-18 h-18 xl:w-24 xl:h-24 2xl:w-28 2xl:h-28 bg-white rounded-md top-5 left-0 md:top-3 md:left-36 lg:left-5 2xl:left-0 border border-gray-200 shadow-md">
+//         <Image
+//           src="/img/bar-chart.png"
+//           alt="Happy Customer"
+//           fill={true}
+//           className="p-2"
+//         />
+//       </div>
+//       <Image
+//         src="/img/fortinode-1.jpg"
+//         alt="Happy Customer"
+//         width={300}
+//         height={300}
+//         className="inline-block rounded-lg w-[300px] md:w-[350px] xl:w-[400px] 2xl:w-[500px] shadow-lg border border-gray-300"
+//       />
+//       <Image
+//         src="/img/dotted-cube-copy.png"
+//         alt="Dots"
+//         width={200}
+//         height={200}
+//         className="inline-block rounded-lg absolute bottom-0 left-0 md:left-20 md:-bottom-5 lg:left-5 xl:-left-3 2xl:-bottom-8 2xl:-left-13 -z-[1] w-[100px] md:w-[150px] 2xl:w-[200px]"
+//       />
+//       <div className="absolute w-28 h-28 xl:w-32 xl:h-32 2xl:w-40 2xl:h-40 bg-white rounded-md bottom-5 right-0 md:right-24 lg:right-0 2xl:-right-7 2xl:-bottom-3 border border-gray-200 shadow-md">
+//         <Image
+//           src="/img/pie-chart.png"
+//           alt="Happy Customer"
+//           fill={true}
+//           className="p-3"
+//         />
+//       </div>
+//     </div>
+//   )
+// }
+
 export function HeroImage() {
   return (
-    <div className="basis-1/2 relative text-center py-10">
-      <div className="absolute w-18 h-18 xl:w-24 xl:h-24 2xl:w-28 2xl:h-28 bg-white rounded-md top-5 left-0 md:top-3 md:left-36 lg:left-5 2xl:left-0 border border-gray-200 shadow-md">
-        <Image
-          src="/img/bar-chart.png"
-          alt="Happy Customer"
-          fill={true}
-          className="p-2"
-        />
-      </div>
+    <div className="basis-1/2 relative text-center">
       <Image
-        src="/img/fortinode-1.jpg"
+        src="/img/6538623.png"
         alt="Happy Customer"
         width={300}
         height={300}
-        className="inline-block rounded-lg w-[300px] md:w-[350px] xl:w-[400px] 2xl:w-[500px] shadow-lg border border-gray-300"
+        className="inline-block rounded-lg w-[300px] md:w-[350px] xl:w-[400px] 2xl:w-[500px]"
       />
-      <Image
-        src="/img/dotted-cube-copy.png"
-        alt="Dots"
-        width={200}
-        height={200}
-        className="inline-block rounded-lg absolute bottom-0 left-0 md:left-20 md:-bottom-5 lg:left-5 xl:-left-3 2xl:-bottom-8 2xl:-left-13 -z-[1] w-[100px] md:w-[150px] 2xl:w-[200px]"
-      />
-      <div className="absolute w-28 h-28 xl:w-32 xl:h-32 2xl:w-40 2xl:h-40 bg-white rounded-md bottom-5 right-0 md:right-24 lg:right-0 2xl:-right-7 2xl:-bottom-3 border border-gray-200 shadow-md">
-        <Image
-          src="/img/pie-chart.png"
-          alt="Happy Customer"
-          fill={true}
-          className="p-3"
-        />
-      </div>
     </div>
   )
 }

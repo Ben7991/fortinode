@@ -44,9 +44,6 @@ export default function Footer() {
               >
                 Services
               </Link>
-              <Link href="/blog" className="hover:text-white text-[0.875em]">
-                Blog
-              </Link>
               <Link
                 href="/contact-us"
                 className="hover:text-white text-[0.875em]"
@@ -82,7 +79,11 @@ export default function Footer() {
             Copyright &copy; 2025 Cybersive Solutions | All rights reserved
           </p>
           <Col colSize="col-4" className="flex justify-end">
-            <Link href="/" className="inline-block hover:text-white" target="_blank">
+            <Link
+              href="/"
+              className="inline-block hover:text-white"
+              target="_blank"
+            >
               Powered By Bernard Teye <GrShare className="inline-block" />
             </Link>
           </Col>
