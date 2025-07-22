@@ -2,7 +2,6 @@ import { FiMail, FiPhone } from 'react-icons/fi'
 import Link from 'next/link'
 
 import { Col, Container, Row } from '@/components/atoms/grid/Grid'
-import Footer from '@/components/organisms/footer/Footer'
 import Headline from '@/components/atoms/headline/Headline'
 import ContactForm from '@/components/organisms/contact-form/ContactForm'
 
@@ -43,7 +42,6 @@ export default function ContactUs() {
         </Container>
       </article>
       <ContactForm />
-      <Footer />
     </>
   )
 }

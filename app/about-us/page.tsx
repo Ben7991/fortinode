@@ -2,7 +2,6 @@ import { Col, Container, Row } from '@/components/atoms/grid/Grid'
 import Headline from '@/components/atoms/headline/Headline'
 import AcademyAd from '@/components/molecules/academy-ad/AcademyAd'
 import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
-import Footer from '@/components/organisms/footer/Footer'
 import { coreValues } from '@/data/core-values'
 import { teamMembers } from '@/data/team-members'
 import Image from 'next/image'
@@ -154,7 +153,6 @@ export default function AboutUs() {
           </Row>
         </Container>
       </article>
-      <Footer />
     </>
   )
 }

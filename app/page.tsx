@@ -7,7 +7,6 @@ import { Col, Container, Row } from '@/components/atoms/grid/Grid'
 import Hero from '@/components/organisms/hero/Hero'
 import Button from '@/components/atoms/button/Button'
 import Testimonial from '@/components/organisms/testimonial/Testimonial'
-import Footer from '@/components/organisms/footer/Footer'
 import AcademyAd from '@/components/molecules/academy-ad/AcademyAd'
 import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
 import { FiSettings } from 'react-icons/fi'
@@ -21,10 +20,8 @@ export default function Home() {
         <Container>
           <Row className="flex-col gap-10 md:gap-20 lg:gap-0 lg:flex-row lg:items-center">
             <div className="basis-1/2 md:order-2 lg:order-1 text-center relative">
-              <div className="absolute w-15 h-15 lg:w-20 lg:h-20 xl:w-36 xl:h-36 bg-[var(--blue-100)] -top-5 left-3 md:left-32 lg:-top-7 lg:-left-0 rounded-md -z-[1]" />
-              <div className="absolute w-15 h-15 lg:w-20 lg:h-20 xl:w-36 xl:h-36 bg-[var(--dark-blue-200)] -bottom-5 right-3 md:right-32 lg:-bottom-7 lg:-right-0 rounded-md -z-[1]" />
               <Image
-                src="/img/fortinode-2.jpg"
+                src="/img/svg-1.svg"
                 alt="Men in suit image"
                 className="w-[300px] md:w-[400px] lg:w-[430px] xl:w-[450px] 2xl:w-[500px] inline-block rounded-md"
                 width={300}
@@ -131,7 +128,6 @@ export default function Home() {
       </article>
       <AcademyAd />
       <Testimonial />
-      <Footer />
     </>
   )
 }

@@ -3,7 +3,9 @@ import { Archivo } from 'next/font/google'
 
 import './globals.css'
 import 'swiper/css'
+
 import Navbar from '@/components/organisms/navbar/Navbar'
+import Footer from '@/components/organisms/footer/Footer'
 
 const openSans = Archivo({
   variable: '--font-archivo',
@@ -25,6 +27,7 @@ export default function RootLayout({
       <body className={`${openSans.variable} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )
