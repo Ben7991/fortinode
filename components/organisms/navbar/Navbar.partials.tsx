@@ -10,7 +10,6 @@ export default function Nav() {
   const [showDropdown, setShowDropdown] = useState(false)
 
   const handleOutsideClick = useCallback((event: globalThis.MouseEvent) => {
-    console.log('[window] -> was clicked')
     event.stopPropagation()
     setShowDropdown(false)
     setShowNav(false)
@@ -29,10 +28,7 @@ export default function Nav() {
   ) => {
     event.stopPropagation()
     setShowDropdown((prevState) => !prevState)
-    console.log('[toggleDropdown] -> was clicked')
   }
-
-  console.log({ showDropdown })
 
   return (
     <>
