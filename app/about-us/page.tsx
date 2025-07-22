@@ -61,12 +61,12 @@ export default function AboutUs() {
               <div>
                 <SectionHeading text="Our Mission" />
                 <p>
-                  Our mission is to empower Ghanaian businesses, particularly
-                  SMEs, with accessible, robust, and proactive cybersecurity and
-                  IT solutions. We strive to be the trusted partner that enables
-                  our clients to operate securely, efficiently, and with
-                  confidence in the digital realm, protecting their assets and
-                  ensuring their continuity.
+                  Our mission is to empower Ghanaian businesses and beyond,
+                  particularly SMEs, with accessible, robust, and proactive
+                  cybersecurity and IT solutions. We strive to be the trusted
+                  partner that enables our clients to operate securely,
+                  efficiently, and with confidence in the digital realm,
+                  protecting their assets and ensuring their continuity.
                 </p>
               </div>
             </Col>
@@ -134,7 +134,7 @@ export default function AboutUs() {
           <div className="text-center mb-5">
             <SectionHeading text="Meet Our Team" />
             <p className="md:w-2/3 mx-auto">
-              Our strength lies in our people. The FortiNode team is comprised
+              Our strength lies in our people. The Cybersive team is comprised
               of dedicated and certified cybersecurity and IT professionals who
               bring a wealth of experience and a passion for protecting
               businesses. We are continuously updating our skills and knowledge

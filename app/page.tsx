@@ -40,7 +40,7 @@ export default function Home() {
               </p>
               <p className="mb-2">
                 It is about trust, reliability, and a shared commitment to your
-                success. At FortiNode, our core values guide every interaction
+                success. At Cybersive, our core values guide every interaction
                 and service we provide:
               </p>
               <ul className="list-disc mx-5 mb-5">
@@ -66,7 +66,7 @@ export default function Home() {
           <div className="text-center mb-5">
             <SectionHeading text="Our Core Offerings" />
             <p className="md:w-2/3 mx-auto">
-              At FortiNode, we're your dedicated shield in the digital world. We
+              At Cybersive, we're your dedicated shield in the digital world. We
               specialize in proactive, robust cybersecurity solutions and
               services designed to protect your business from evolving threats.
               Our services are tailored to build resilience, detect attacks
