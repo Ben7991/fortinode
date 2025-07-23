@@ -1,10 +1,11 @@
+import Image from 'next/image'
+
 import { Col, Container, Row } from '@/components/atoms/grid/Grid'
 import Headline from '@/components/atoms/headline/Headline'
 import AcademyAd from '@/components/molecules/academy-ad/AcademyAd'
 import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
 import { coreValues } from '@/data/core-values'
 import { teamMembers } from '@/data/team-members'
-import Image from 'next/image'
 
 export default function AboutUs() {
   return (
@@ -48,7 +49,7 @@ export default function AboutUs() {
             <Col colSize="col-6">
               <div className="relative">
                 <Image
-                  src="/img/fortinode-4.jpg"
+                  src="/img/svg-6.svg"
                   alt="Men in suit image"
                   className="w-[300px] md:w-[400px] lg:w-[430px] xl:w-[450px] 2xl:w-[500px] inline-block rounded-md"
                   width={300}
@@ -78,7 +79,7 @@ export default function AboutUs() {
             <Col colSize="col-6">
               <div className="relative">
                 <Image
-                  src="/img/fortinode-3.jpg"
+                  src="/img/svg-5.svg"
                   alt="Men in suit image"
                   className="w-[300px] md:w-[400px] lg:w-[430px] xl:w-[450px] 2xl:w-[500px] inline-block rounded-md"
                   width={300}
