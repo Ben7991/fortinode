@@ -81,6 +81,7 @@ export default function Home() {
                 description="Don't wait for an attack to happen. We help you build a strong
                 foundation, making your systems less attractive and more
                 resistant to cyber threats"
+                href="/services/prevention-hardening"
               />
             </Col>
             <Col colSize="col-4">
@@ -90,6 +91,7 @@ export default function Home() {
                 }
                 title="Detection & Monitoring"
                 description="Continuous detection and real-time monitoring to identify and respond to threats before they impact your business."
+                href="/services/detection-monitoring"
               />
             </Col>
             <Col colSize="col-4">
@@ -99,6 +101,7 @@ export default function Home() {
                 }
                 title="Response & Recovery"
                 description="Swift incident response and effective recovery strategies to minimize downtime and protect your critical assets."
+                href="/services/response-recovery"
               />
             </Col>
             <Col colSize="col-4">
@@ -110,6 +113,7 @@ export default function Home() {
                 description="Your employees are your first line of defense. We empower your
                 team with the knowledge and skills to recognize and resist cyber
                 threats"
+                href="/services/cybersecurity-training"
               />
             </Col>
             <Col colSize="col-4">
@@ -121,6 +125,7 @@ export default function Home() {
                 description="We provide continuous monitoring, proactive
                 maintenance, and expert support to keep your systems secure and
                 running smoothly."
+                href="/services/managed-services"
               />
             </Col>
           </Row>

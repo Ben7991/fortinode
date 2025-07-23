@@ -9,12 +9,14 @@ type ServiceCardProps = {
   icon: ReactNode
   title: string
   description: string
+  href: string
 }
 
 export default function ServiceCard({
   icon,
   title,
   description,
+  href,
 }: ServiceCardProps) {
   return (
     <div className="px-4 text-center">
@@ -23,7 +25,12 @@ export default function ServiceCard({
         {title}
       </Headline>
       <p className="mb-3">{description}</p>
-      <Button el="link" href="/" variant="light" className="inline-block px-4">
+      <Button
+        el="link"
+        href={href}
+        variant="light"
+        className="inline-block px-4"
+      >
         Read More
       </Button>
     </div>
