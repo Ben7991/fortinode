@@ -11,21 +11,22 @@ export default function Nav() {
 
   const handleOutsideClick = useCallback((event: globalThis.MouseEvent) => {
     event.stopPropagation()
-    setShowDropdown(false)
-    setShowNav(false)
+
+    if (!(event.target as HTMLElement).classList.contains('dropdown')) {
+      setShowDropdown(false)
+      setShowNav(false)
+    }
   }, [])
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleOutsideClick)
+    document.addEventListener('click', handleOutsideClick)
   }, [handleOutsideClick])
 
   const toggleNav = () => {
     setShowNav((prevState) => !prevState)
   }
 
-  const toggleDropdown = (
-    event: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>
-  ) => {
+  const toggleDropdown = (event: MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation()
     setShowDropdown((prevState) => !prevState)
   }
@@ -49,7 +50,7 @@ export default function Nav() {
           <NavLink href="/about-us" text="About Us" />
           <li className="relative hover:last:block">
             <button
-              className="flex items-center justify-between lg:justify-start gap-1 hover:text-[var(--dark-blue-100)] hover:bg-[var(--light-blue-100)] lg:hover:bg-transparent py-1 px-4 lg:px-0 hover:cursor-pointer"
+              className="dropdown flex items-center justify-between lg:justify-start gap-1 hover:text-[var(--dark-blue-100)] hover:bg-[var(--light-blue-100)] lg:hover:bg-transparent py-1 px-4 lg:px-0 hover:cursor-pointer lg:border-b-2 lg:border-b-transparent lg:hover:border-b-[var(--blue-100)]"
               type="button"
               onClick={toggleDropdown}
             >
@@ -90,7 +91,7 @@ function NavLink({ href, text }: NavLinkProps) {
 
 function DropdownList(props: { state: boolean }) {
   const baseClassNames =
-    'flex flex-col w-80 bg-white shadow-md border border-gray-200 absolute lg:left-0 lg:top-10 rounded-md overflow-hidden transition-[translate] opacity-0'
+    'dropdown flex flex-col w-80 bg-white shadow-md border border-gray-200 absolute lg:left-0 lg:top-10 rounded-md overflow-hidden transition-[translate] opacity-0'
   return (
     <div
       className={`${baseClassNames} ${
