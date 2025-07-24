@@ -59,31 +59,31 @@ export function QuickLinks() {
           About Us
         </Link>
         <Link
-          href="/prevention-hardening"
+          href="/services/prevention-hardening"
           className="hover:text-white text-[0.875em]"
         >
           Proactive Prevention & Hardening
         </Link>
         <Link
-          href="/prevention-hardening"
+          href="/services/detection-monitoring"
           className="hover:text-white text-[0.875em]"
         >
           Detection & Monitoring
         </Link>
         <Link
-          href="/response-recovery"
+          href="/services/response-recovery"
           className="hover:text-white text-[0.875em]"
         >
           Response & Recovery
         </Link>
         <Link
-          href="/cybersecurity-training"
+          href="/services/cybersecurity-training"
           className="hover:text-white text-[0.875em]"
         >
           Cybersecurity Training
         </Link>
         <Link
-          href="/managed-services"
+          href="/services/managed-services"
           className="hover:text-white text-[0.875em]"
         >
           Managed IT Services
