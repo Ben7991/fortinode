@@ -7,7 +7,7 @@ export default function Testimonial() {
     <article className="py-5 md:py-10 xl:py-15 testimonial">
       <Container>
         <div className="text-center mb-5">
-          <SectionHeading text="Testimonials" />
+          <SectionHeading text="Testimonials" className="mb-4 md:mb-5" />
           <p className="md:w-2/3 lg:w-2/4 mx-auto">
             Find out what our clients are saying about us and why they always
             want to do handle their I.T. needs

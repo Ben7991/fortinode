@@ -59,7 +59,7 @@ export default function AboutUs() {
             </Col>
             <Col colSize="col-6">
               <div>
-                <SectionHeading text="Our Mission" />
+                <SectionHeading text="Our Mission" className="mb-4 md:mb-5" />
                 <p>
                   Our mission is to empower Ghanaian businesses and beyond,
                   particularly SMEs, with accessible, robust, and proactive
@@ -89,7 +89,7 @@ export default function AboutUs() {
             </Col>
             <Col colSize="col-6">
               <div>
-                <SectionHeading text="Our Vision" />
+                <SectionHeading text="Our Vision" className="mb-4 md:mb-5" />
                 <p>
                   To be the leading and most trusted cybersecurity and IT
                   services provider in Ghana and Africa, recognized for our
@@ -106,7 +106,7 @@ export default function AboutUs() {
       <article className="py-5 md:py-10 xl:py-15">
         <Container>
           <div className="text-center mb-5">
-            <SectionHeading text="Our Core Values" />
+            <SectionHeading text="Our Core Values" className="mb-4 md:mb-5" />
             <p className="md:w-2/4 mx-auto">
               Our values are the foundation of everything we do. They guide our
               interactions, our decisions, and our commitment to you:
@@ -132,7 +132,7 @@ export default function AboutUs() {
       <article className="py-5 md:py-10 xl:py-15">
         <Container>
           <div className="text-center mb-5">
-            <SectionHeading text="Meet Our Team" />
+            <SectionHeading text="Meet Our Team" className="mb-4 md:mb-5" />
             <p className="md:w-2/3 mx-auto">
               Our strength lies in our people. The Cybersive team is comprised
               of dedicated and certified cybersecurity and IT professionals who

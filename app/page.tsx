@@ -29,7 +29,7 @@ export default function Home() {
               />
             </div>
             <div className="md:p-3 basis-1/2 md:order-1 lg:order-2 lg:ps-8 xl:ps-10 2xl:ps-15">
-              <SectionHeading text="Why Choose Us?" />
+              <SectionHeading text="Why Choose Us?" className="mb-4 md:mb-5" />
               <p className="mb-2">
                 The digital realm is constantly evolving, bringing with it both
                 incredible opportunities and persistent threats. Choosing a
@@ -62,7 +62,10 @@ export default function Home() {
       <article className="py-5 md:py-10 xl:py-15" id="services">
         <Container>
           <div className="text-center mb-5">
-            <SectionHeading text="Our Core Offerings" />
+            <SectionHeading
+              text="Our Core Offerings"
+              className="mb-4 md:mb-5"
+            />
             <p className="md:w-2/3 mx-auto">
               At Cybersive, we're your dedicated shield in the digital world. We
               specialize in proactive, robust cybersecurity solutions and

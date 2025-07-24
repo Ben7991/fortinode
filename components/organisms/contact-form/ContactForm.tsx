@@ -42,7 +42,7 @@ export default function ContactForm() {
       <Container>
         <SectionHeading
           text="Or submit the form below"
-          className="heading-semibold"
+          className="heading-semibold mb-4 md:mb-5"
         />
         <form onSubmit={handleSubmit(onSubmit)}>
           <Row className="flex-col md:flex-row justify-between gap-4 mb-5">
