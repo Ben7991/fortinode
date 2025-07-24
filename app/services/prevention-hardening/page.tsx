@@ -1,9 +1,4 @@
-import { Col, Container, Row } from '@/components/atoms/grid/Grid'
-import Headline from '@/components/atoms/headline/Headline'
-import Notifier from '@/components/molecules/notifier/Notifier'
-import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
 import Image from 'next/image'
-import { ReactNode } from 'react'
 import {
   FaGlobe,
   FaLaptopCode,
@@ -18,6 +13,12 @@ import {
   MdReportProblem,
   MdSecurity,
 } from 'react-icons/md'
+
+import Card from '@/components/molecules/card/Card'
+import { Col, Container, Row } from '@/components/atoms/grid/Grid'
+import Headline from '@/components/atoms/headline/Headline'
+import Notifier from '@/components/molecules/notifier/Notifier'
+import SectionHeading from '@/components/molecules/section-heading/SectionHeading'
 
 export default function PreventionHardening() {
   return (
@@ -201,25 +202,5 @@ export default function PreventionHardening() {
         </Container>
       </article>
     </>
-  )
-}
-
-function Card({
-  title,
-  description,
-  icon,
-}: {
-  title: string
-  description: string
-  icon: ReactNode
-}) {
-  return (
-    <div className="text-center p-4 border border-gray-200 rounded-md md:border-none">
-      {icon}
-      <Headline tag="h4" className="my-2 md:my-3">
-        {title}
-      </Headline>
-      <p>{description}</p>
-    </div>
   )
 }
