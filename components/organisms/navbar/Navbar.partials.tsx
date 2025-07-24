@@ -72,7 +72,7 @@ function MobileNav({ showNav, onToggleNav }: MobileNavProps) {
       >
         <AppLogo />
         <ul className="flex flex-col mt-6">
-          <li>
+          <li onClick={onToggleNav}>
             <Link
               className="block py-2 px-3 rounded-md hover:bg-gray-200"
               href="/"
@@ -80,7 +80,7 @@ function MobileNav({ showNav, onToggleNav }: MobileNavProps) {
               Home
             </Link>
           </li>
-          <li>
+          <li onClick={onToggleNav}>
             <Link
               className="block py-2 px-3 rounded-md hover:bg-gray-200"
               href="/about-us"
@@ -96,7 +96,10 @@ function MobileNav({ showNav, onToggleNav }: MobileNavProps) {
               Services <FiChevronDown />
             </button>
             {showDropdown && (
-              <div className="flex flex-col ps-5 py-2 gap-y-2">
+              <div
+                className="flex flex-col ps-5 py-2 gap-y-2"
+                onClick={onToggleNav}
+              >
                 <Link
                   href="/services/prevention-hardening"
                   className="flex gap-1 items-center hover:font-semibold"
@@ -130,7 +133,7 @@ function MobileNav({ showNav, onToggleNav }: MobileNavProps) {
               </div>
             )}
           </li>
-          <li>
+          <li onClick={onToggleNav}>
             <Link
               className="block py-2 px-3 rounded-md hover:bg-gray-200"
               href="/contact-us"
