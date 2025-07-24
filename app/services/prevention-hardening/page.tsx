@@ -22,12 +22,12 @@ import {
 export default function PreventionHardening() {
   return (
     <>
-      <article className="pb-5 md:pb-10 xl:pb-15">
+      <article className="pb-10 xl:pb-15">
         <Container>
-          <Row className="md:items-center">
+          <Row className="flex-col md:flex-row md:items-center">
             <Col colSize="col-6">
               <Headline tag="h3" className="mb-4">
-                Proactive Prevention & hardening
+                Proactive Prevention & Hardening
               </Headline>
               <p>
                 Building a strong, secure foundation is the first step to
@@ -51,12 +51,12 @@ export default function PreventionHardening() {
         </Container>
       </article>
 
-      <article className="py-5 md:py-10 xl:py-15">
+      <article className="py-10 xl:py-15">
         <Container>
-          <div className="text-center mb-5">
+          <div className="text-center mb-4 md:mb-5">
             <SectionHeading text="Security Architecture & Design" />
           </div>
-          <Row>
+          <Row className="flex-wrap flex-col md:justify-center gap-y-4 md:flex-row">
             <Col colSize="col-4">
               <Card
                 icon={
@@ -88,7 +88,7 @@ export default function PreventionHardening() {
         </Container>
       </article>
 
-      <article className="py-5 md:py-10 xl:py-15">
+      <article className="py-10 xl:py-15">
         <Container>
           <div className="text-center mb-5">
             <SectionHeading text="Cybersecurity Assessments" />
@@ -134,10 +134,10 @@ export default function PreventionHardening() {
         </Container>
       </article>
 
-      <article className="py-5 md:py-10 xl:py-15">
+      <article className="py-10 xl:py-15">
         <Container>
           <div className="text-center mb-5">
-            <SectionHeading text="Identity and Access Management (IAM)" />
+            <SectionHeading text="Identity & Access Management" />
           </div>
           <Row className="flex-wrap justify-center gap-y-4 lg:gap-y-10">
             <Col colSize="col-4">
@@ -171,9 +171,9 @@ export default function PreventionHardening() {
         </Container>
       </article>
 
-      <article className="py-5 md:py-10 xl:py-15">
+      <article className="py-10 xl:py-15">
         <Container>
-          <Row className="md:items-center">
+          <Row className="flex-col md:flex-row md:items-center">
             <Col colSize="col-6">
               <div className="basis-1/2 text-center">
                 <Image
@@ -185,8 +185,11 @@ export default function PreventionHardening() {
                 />
               </div>
             </Col>
-            <Col colSize="col-6">
-              <SectionHeading text="Vendor Security Management" />
+            <Col colSize="col-6" className="p-4 md:p-0">
+              <SectionHeading
+                text="Vendor Security Management"
+                className="mb-3"
+              />
               <p>
                 Your supply chain can be a weak link. We assess the security
                 posture of your third-party vendors and partners, helping you
@@ -211,9 +214,9 @@ function Card({
   icon: ReactNode
 }) {
   return (
-    <div className="text-center px-4">
+    <div className="text-center p-4 border border-gray-200 rounded-md md:border-none">
       {icon}
-      <Headline tag="h4" className="my-3">
+      <Headline tag="h4" className="my-2 md:my-3">
         {title}
       </Headline>
       <p>{description}</p>
