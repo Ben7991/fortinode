@@ -19,7 +19,7 @@ export default function ServiceCard({
   href,
 }: ServiceCardProps) {
   return (
-    <div className="px-4 text-center">
+    <div className="p-4 lg:py-0 md:px-4 text-center border border-gray-200 rounded-md md:border-none">
       {icon}
       <Headline tag="h4" className="my-3">
         {title}

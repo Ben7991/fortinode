@@ -6,7 +6,7 @@ import Headline from '@/components/atoms/headline/Headline'
 
 export function HeroMessage() {
   return (
-    <div className="basis-1/2 md:text-center lg:text-start relative">
+    <div className="basis-1/2 order-2 lg:order-1 md:text-center lg:text-start relative">
       <small className="flex gap-2 items-center text-[var(--blue-100)] md:justify-center lg:justify-start">
         <BsPatchCheckFill className="text-xl" /> Your Trusted Partner in
         Cybersecurity and IT Support Excellence
@@ -47,7 +47,7 @@ export function HeroMessage() {
 
 export function HeroImage() {
   return (
-    <div className="basis-1/2 relative text-center">
+    <div className="basis-1/2 relative text-center order-1 lg:order-2">
       <Image
         src="/img/svg-4.svg"
         alt="Happy Customer"

@@ -112,10 +112,10 @@ export default function AboutUs() {
               interactions, our decisions, and our commitment to you:
             </p>
           </div>
-          <Row className="flex-col md:flex-row md:flex-wrap gap-y-10">
+          <Row className="flex-col md:flex-row md:flex-wrap gap-y-4 lg:gap-y-10">
             {coreValues.map((coreValue) => (
               <Col colSize="col-4" key={coreValue.heading}>
-                <div className="text-center md:px-4">
+                <div className="text-center p-4 md:px-4 lg:py-0 border border-gray-200 rounded-md md:border-none">
                   <Headline tag="h4" className="mb-3">
                     {coreValue.heading}
                   </Headline>
@@ -141,10 +141,10 @@ export default function AboutUs() {
               to stay ahead of the latest threats and technologies.
             </p>
           </div>
-          <Row className="flex-col md:flex-row md:flex-wrap">
+          <Row className="flex-col md:flex-row md:flex-wrap gap-y-4">
             {teamMembers.map((member) => (
               <Col colSize="col-4" key={member.name}>
-                <div className="md:px-4 text-center">
+                <div className="text-center p-4 md:px-4 lg:py-0 border border-gray-200 rounded-md md:border-none">
                   <Headline tag="h4">{member.name}</Headline>
                   <p className="mb-4">{member.title}</p>
                   <p>{member.bio}</p>
