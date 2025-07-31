@@ -6,7 +6,7 @@ export const teamMembers = [
   },
   {
     name: 'Evans O. Nti',
-    title: 'Founder & Lead Cybersecurity Consultant',
+    title: 'Lead Cybersecurity Consultant',
     bio: 'A certified cybersecurity expert with 8+ years of experience in IT and defensive security. Passionate about empowering SMEs with practical security knowledge. Holds certifications such as CompTIA Security+, CySA+, CEH, CSA, MCSE, CCNP-Security, etc.',
   },
   {
