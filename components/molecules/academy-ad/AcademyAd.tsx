@@ -3,6 +3,7 @@ import { GoArrowRight } from 'react-icons/go'
 
 import { Col, Container, Row } from '@/components/atoms/grid/Grid'
 import Headline from '@/components/atoms/headline/Headline'
+import Link from 'next/link'
 
 export default function AcademyAd() {
   return (
@@ -35,12 +36,13 @@ export default function AcademyAd() {
                   high-demand field.
                 </p>
               </div>
-              <a
-                href="academy.domain.com"
+              <Link
+                target="_blank"
+                href="https://cybersive-academy.vercel.app/"
                 className="text-white hover:bg-[var(--dark-blue-200)] py-2 px-5 rounded-md flex items-center gap-2"
               >
                 Let's Go <GoArrowRight className="text-xl" />
-              </a>
+              </Link>
             </div>
           </Col>
         </Row>
