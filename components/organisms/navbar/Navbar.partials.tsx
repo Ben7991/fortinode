@@ -52,6 +52,7 @@ export function Nav() {
       <Link
         className="hidden lg:block py-1.5 px-4 bg-[var(--dark-blue-100)] hover:bg-[var(--dark-blue-200)] text-white lg:rounded-md lg:cursor-pointer"
         href="https://cybersive-academy.vercel.app/"
+        target="_blank"
       >
         Our Academy
       </Link>
