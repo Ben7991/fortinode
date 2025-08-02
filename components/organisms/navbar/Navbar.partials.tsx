@@ -51,7 +51,7 @@ export function Nav() {
       <LargeScreenNav onToggleDropdown={toggleDropdown} state={showDropdown} />
       <Link
         className="hidden lg:block py-1.5 px-4 bg-[var(--dark-blue-100)] hover:bg-[var(--dark-blue-200)] text-white lg:rounded-md lg:cursor-pointer"
-        href="#"
+        href="https://cybersive-academy.vercel.app/"
       >
         Our Academy
       </Link>

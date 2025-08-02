@@ -13,7 +13,7 @@ const openSans = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: 'Fortinode Technologies',
+  title: 'Cybersive',
   description: 'Reliable IT & Network Support for Growing Businesses',
 }
 
